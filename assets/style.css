@@ -1,0 +1,146 @@
+/* Defining style variables */
+:root {
+    --primary: rgb(142, 142, 142);
+    --secondary: rgb(0, 47, 70);
+
+    --text: rgb(255, 255, 255);
+    --color: rgb(20, 144, 130);
+
+    --right: rgb(64, 255, 0);
+    --wrong: rgb(249, 8, 8);
+
+    --li-odd: rgb(200, 200, 200);
+    --li-even: rgb(100, 100, 100);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#left, #right {
+    margin: 25px;
+    padding: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+}
+
+#answerresults {
+    background-color: var(--secondary);
+    margin: 20px auto;
+    display: none;
+    padding: 10px 35px;
+    border-radius: 40px;
+}
+
+#main {
+    width: 85%;
+    display: flex;
+    background-color: var(--primary);
+    color: var(--text);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+#scoreslist {
+    margin: 5px auto;
+    color: var(--secondary);
+}
+
+#timer {
+    color: var(--wrong);
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    background-color: var(--li-odd);
+    text-align: left;
+    font-size: 20px;
+    padding: 2px 10px;
+}
+
+li:nth-child(even) {
+    background-color: var(--li-even);
+}
+
+/* Intro page, scores, quiz, final score */
+
+#intro, #quiz, #finalscore {
+    width: 75%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#intro, #quiz, #finalscore, #scores {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#scores {
+    align-items: center;
+    justify-content: center;
+}
+
+#intro {
+    display: flex;
+}
+
+#quiz {
+    display: none;
+}
+
+#finalscore {
+    display: none;
+}
+
+h1 {
+    margin: 5px auto;
+}
+
+/* Button */
+
+#buttons {
+    display: flex;
+}
+
+.button, #submit {
+    background-color: rgb(34, 229, 57);
+    margin: 5px auto;
+    border: 2px solid black;
+    border-radius: .5em;
+    padding: .25em;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus {
+    box-shadow: 0 0 3px var(--secondary) inset, 2px 2px 2px var(--secondary);
+}
+  
+
+.button:active {
+    font-size: 50%;
+}
+
+#back, #clearscores {
+    margin: 5px;
+}
+
+button{
+    border-radius: .2em;
+}

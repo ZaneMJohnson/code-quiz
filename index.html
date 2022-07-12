@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <a href="./highscores.html" id="left"><h2>High Scores!</h2></a>
+        <div id="right">
+            <h2>Timer: <span id="timer"></span></h2>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div id ="intro">
+                <h1>Coding Quiz!</h1>
+                <p>When you start the quiz, you will be asked questions about coding. The timer with start at 45 seconds and will deduct 10 seconds every missed questions</p>
+                <p>Have Fun!</p>
+                <div id="startquiz" class ="button" >Start Quiz</div>
+            </div>
+            <div id="quiz">
+            </div>
+            <div id="finalscore">
+                <h3>Quiz Complete!</h3>
+                <h3>Your score is: <span id = "score"></span></h3>
+                <form id="form">
+                    <label for="name">Enter Initials: </label>
+                    <input type="text" name="initials"  id="initials" />
+                    <button id="submit">Submit!</button>
+                </form>
+            </div>
+            <div id="results">
+            </div>
+        </div>
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
